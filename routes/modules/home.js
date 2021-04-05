@@ -5,7 +5,7 @@ const db = require('../../models')
 const Todo = db.Todo
 
 
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
   return Todo.findAll({
     raw: true,
     nest: true
